@@ -1,0 +1,18 @@
+
+//-----------------------------------
+@import "normalize.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+@import "global.scss";
+//-------------BLOCKS----------------
+@import "blocks/btn.scss";
+@import "blocks/logo.scss";
+//------------SECTIONS---------------
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
+@import "blocks/s-hero.scss";
+@import "blocks/s-about.scss";
+@import "blocks/s-pets.scss";
+@import "blocks/s-help.scss";
+@import "blocks/s-donation.scss";

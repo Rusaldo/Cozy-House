@@ -1,0 +1,44 @@
+.hero {
+  height: 100%;
+  background: url(../img/hero-bg-with-dog.png) #3f312a no-repeat 100% / cover;
+  padding-top: 126px;
+}
+.hero__wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.welcome {
+  max-width: 450px;
+}
+.welcome__heading {
+  font-family: Georgia, serif;
+  font-size: 4.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 2.64px;
+  color: $white;
+}
+.welcome__text {
+  color: $lightgrey;
+  margin: 4.5rem 0;
+}
+@media screen and (max-width: $tablet) {
+  .hero {
+    padding-top: 113px;
+    background: url(../img/hero-bg.png) #3f312a no-repeat 100% / cover;
+  }
+  .welcome {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: $phone) {
+  .hero {
+    padding-top: 100px;
+    background: url(../img/hero-bg-small.png) #3f312a no-repeat 100% / cover;
+  }
+  .welcome__text {
+    font-size: 2rem;
+  }
+}

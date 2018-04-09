@@ -1,0 +1,66 @@
+.donation {
+  background: #f6f6f6;;
+  padding: 7rem 0;
+}
+.donation__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.donation__pic {
+  margin-right: 60px;
+}
+.donation__text {
+  max-width: 360px;
+}
+.donation__heading {
+  margin-bottom: 2rem;
+}
+.donation__bank {
+  font-family: Georgia, serif;
+  letter-spacing: 0.9px;
+  color: $heading;
+}
+.donation__creditcard {
+  max-width: 330px;
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+  color: $black;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  padding-left: 6rem;
+  margin: 1rem 0 3rem;
+  background: url(../img/credit-card-icon.png) $orange no-repeat 15px;
+}
+.donation__info {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #b2b2b2;
+}
+
+@media screen and (max-width: $tablet) {
+  .donation__pic {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .donation__wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .donation__pic {
+    margin: 0;
+  }
+  .donation__heading {
+    margin: 2rem auto;
+  }
+  .donation__creditcard {
+    margin: 1rem auto 3rem;
+  }
+}
+@media screen and (max-width: $phone) {
+  .donation__text {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,39 @@
+.help {
+  padding: 7rem 0 8rem;
+}
+.help__heading {
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+.help__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.help__item {
+  flex-basis: 20%;
+  text-align: center;
+  margin-top: 7rem;
+  padding: 0 2rem;
+}
+.help__icon {
+  height: 65px;
+  margin-bottom: 2rem;
+}
+.help__caption {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  color: $heading;
+  white-space: nowrap;
+}
+@media screen and (max-width: $phone) {
+  .help__list {
+    justify-content: space-around;
+  }
+  .help__item {
+    flex-basis: 40%;
+  }
+}

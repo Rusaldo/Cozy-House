@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Cozy House</title>
+</head>
+<body>
+  <div id="app" class="vue-wrapper">
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <nav class="header__nav">
+          <a href="." class="logo">
+            <strong class="logo__name">Cozy House</strong>
+            <small class="logo__caption">Shelter for pets in Boston</small>
+          </a>
+          <span  class="menu-toggle" @click="menuActive = !menuActive" :aria-pressed="menuActive ? 'true' : 'false'">&#9776;</span>
+          <ul class="menu" :class="{ menu_active: menuActive }">
+            <li class="menu__item">
+              <a class="menu__link" @click="menuActive = !menuActive" href="#about">About the shelter</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" @click="menuActive = !menuActive" href="#pets">Our pets</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" @click="menuActive = !menuActive" href="#help">To help the shelter</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" @click="menuActive = !menuActive" href="#footer">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+        <div class="hero__wrapper wrapper">
+          <article class="welcome">
+            <h1 class="welcome__heading">Not only people need a house</h1>
+            <p class="welcome__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est in porttitor  porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
+            <a class="btn welcome__btn" href="#pets">Make a friend</a>
+          </article>
+        </div>
+      </section>
+    <section class="about" id="about">
+        <article class="about__wrapper wrapper">
+          <section class="about__pic">
+            <img class="about__img" src="img/dog-and-cat.png" alt="Cat and dog" width="300" height="408">
+          </section>
+          <section class="about__text">
+            <h2 class="about__heading section-heading">About the shelter “Cozy House”</h2>
+            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
+            <p class="about__paragraph">Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis ultrices pharetra. Morbi tempus at ante sit amet tristique. Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim lorem. Sed at ligula et sem mattis gravida ac vel erat.</p>
+          </section>
+        </article>
+      </section>
+    <section class="pets" id="pets">
+      <div class="wrapper">
+        <h2 class="pets__heading section-heading">Our friends who are looking for a house</h2>
+        <ul class="pets__list">
+          <li class="pets__pet pet">
+            <section class="pet__pic">
+              <img class="pet__img" src="img/pet-1.png" alt="Pet photo">
+            </section>
+            <h3 class="pet__caption">Katrine</h3>
+            <a class="pet__btn btn" href="#">Learn More</a>
+          </li>
+          <li class="pets__pet pet">
+            <section class="pet__pic">
+              <img class="pet__img" src="img/pet-2.png" alt="Pet photo">
+            </section>
+            <h3 class="pet__caption">Jennifer</h3>
+            <a class="pet__btn btn" href="#">Learn More</a>
+          </li>
+          <li class="pets__pet pet">
+            <section class="pet__pic">
+              <img class="pet__img" src="img/pet-3.png" alt="Pet photo">
+            </section>
+            <h3 class="pet__caption">Woody</h3>
+            <a class="pet__btn btn" href="#">Learn More</a>
+          </li>
+        </ul>
+        <a class="pets__btn btn" href="#">Get to know the rest</a>
+      </div>
+    </section>
+    <section class="help" id="help">
+      <div class="wrapper">
+        <h2 class="help__heading section-heading">Than you can help our shelter</h2>
+        <ul class="help__list">
+          <li class="help__item">
+            <div class="help__icon"><img src="img/icon-1.png" alt="Help item" class="help__img"></div>
+            <h3 class="help__caption">Pet food</h3>
+          </li>
+          <li class="help__item">
+            <div class="help__icon"><img src="img/icon-2.png" alt="Help item" class="help__img"></div>
+            <h3 class="help__caption">Transportation</h3>
+          </li>
+          <li class="help__item">
+            <div class="help__icon"><img src="img/icon-3.png" alt="Help item" class="help__img"></div>
+            <h3 class="help__caption">Toys</h3>
+          </li>
+          <li class="help__item">
+            <div class="help__icon"><img src="img/icon-4.png" alt="Help item" class="help__img"></div>
+            <h3 class="help__caption">Bowls and cups</h3>
+          </li>
+          <li class="help__item">
+            <div class="help__icon"><img src="img/icon-5.png" alt="Help item" class="help__img"></div>
+            <h3 class="help__caption">Shampoos</h3>
+          </li>
+          <li class="help__item">
+            <div class="help__icon"><img src="img/icon-6.png" alt="Help item" class="help__img"></div>
+            <h3 class="help__caption">Vitamins</h3>
+          </li>
+          <li class="help__item">
+            <div class="help__icon"><img src="img/icon-7.png" alt="Help item" class="help__img"></div>
+            <h3 class="help__caption">Medicines</h3>
+          </li>
+          <li class="help__item">
+            <div class="help__icon"><img src="img/icon-8.png" alt="Help item" class="help__img"></div>
+            <h3 class="help__caption">Collars / leashes</h3>
+          </li>
+          <li class="help__item">
+            <div class="help__icon"><img src="img/icon-9.png" alt="Help item" class="help__img"></div>
+            <h3 class="help__caption">Sleeping area</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="donation">
+      <div class="donation__wrapper wrapper">
+        <section class="donation__pic">
+          <img class="about__img" src="img/dog-donation.png" alt="Dog" width="" height="">
+        </section>
+        <section class="donation__text">
+          <h2 class="donation__heading section-heading">In addition, you can make a donation</h2>
+          <p class="donation__bank">Name of the bank / Type of bank account</p>
+          <p class="donation__creditcard">8380 2880 8028 8791 7435</p>
+          <small class="donation__info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. </small>
+        </section>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="footer__wrapper wrapper">
+        <address class="footer__contacts">
+          <h2 class="footer__heading section-heading">For questions and suggestions</h2>
+          <a class="footer__contact" href="mailto:email@shelter.com">email@shelter.com</a>
+          <a class="footer__contact" href="tel:+136745677554">+13 674 567 75 54</a>
+        </address>
+        <address class="footer__contacts">
+          <h2 class="footer__heading section-heading">We are waiting for your visit</h2>
+          <span class="footer__contact" href="#">Boston, Central Street, 1st (Entrance from the store)</span>
+          <span class="footer__contact" href="#">London, South Park, 18st</span>
+        </address>
+        <img class="footer__img" src="img/dog-footer.png" alt="Happy doge">
+      </div>
+    </footer>
+  </div>
+  <!--JavaScripts-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
