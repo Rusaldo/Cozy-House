@@ -37,6 +37,10 @@ ul, ol, li {
   padding: 0;
   list-style-type: none;
 }
+main {
+  width: 100%;
+  padding-top: 126px;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -64,9 +68,15 @@ a {
   html {
     font-size: 9px;
   }
+  main {
+    padding-top: 113px;
+  }
 }
 @media screen and (max-width: $phone) {
   html {
     font-size: 8.5px;
+  }
+  main {
+    padding-top: 100px;
   }
 }

@@ -1,0 +1,44 @@
+.all-pets__header {
+  padding: 3rem 1.5rem;
+}
+.all-pets__nav {
+  color: $heading;
+}
+.all-pets__logo {
+  & .logo__name {
+    color: $heading;
+    &:hover {
+      color: $orange;
+    }
+  }
+  & .logo__caption {
+    color: $black;
+  }
+}
+
+.all-pets__menu.menu_active {
+  color: $lightgrey;
+}
+.all-pets-heading {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.all-pets__pet {
+  flex-basis: 20%;
+}
+.all-pets {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+@media screen and (max-width: $tablet) {
+  .pet {
+    flex-basis: 40%;
+  }
+}
+@media screen and (max-width: 565px) {
+  .pet {
+    flex-basis: 100%;
+  }
+}
