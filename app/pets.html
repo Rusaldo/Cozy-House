@@ -12,14 +12,14 @@
     <header class="all-pets__header header">
       <div class="header__wrapper wrapper">
         <nav class="all-pets__nav header__nav">
-          <a href="." class="all-pets__logo logo">
+          <a href="index.html" class="all-pets__logo logo">
             <strong class="logo__name">Cozy House</strong>
             <small class="logo__caption">Shelter for pets in Boston</small>
           </a>
           <span  class="menu-toggle" @click="menuActive = !menuActive" :aria-pressed="menuActive ? 'true' : 'false'">&#9776;</span>
           <ul class="all-pets__menu menu" :class="{ menu_active: menuActive }">
             <li class="menu__item">
-              <a class="menu__link" @click="menuActive = !menuActive" href="#about">About the shelter</a>
+              <a class="menu__link" @click="menuActive = !menuActive" href="index.html">About the shelter</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" @click="menuActive = !menuActive" href="#pets">Our pets</a>
